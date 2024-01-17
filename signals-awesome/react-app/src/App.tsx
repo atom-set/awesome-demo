@@ -7,9 +7,6 @@ import Layout from "./components/Layout";
 const Home = lazy(() => import('./pages/Home'));
 const About = lazy(() => import('./pages/About'));
 
-
-
-
 function App() {
   return (
     <div className="App">

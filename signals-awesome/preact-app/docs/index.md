@@ -1,3 +1,3 @@
-### 文章
+### 文档
 - [Preact CLI](https://preactjs.com/guide/v10/getting-started)
-- [信号](https://preactjs.com/guide/v10/signals/)
+- [Signals](https://preactjs.com/guide/v10/signals)
