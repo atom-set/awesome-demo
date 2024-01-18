@@ -41,7 +41,7 @@ const Cart = observer(() => {
   )
 })
 
-const Mall = observer(() => {
+const MallObserver = observer(() => {
   return (
     <div>
       <Main />
@@ -50,4 +50,4 @@ const Mall = observer(() => {
   )
 })
 
-export default Mall;
+export default MallObserver;
