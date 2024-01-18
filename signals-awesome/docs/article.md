@@ -4,4 +4,5 @@
 - [Building a Reactive Library from Scratch])https://dev.to/ryansolid/a-hands-on-introduction-to-fine-grained-reactivity-3ndf)
 - [SolidJS: Reactivity to Rendering](https://angularindepth.com/posts/1289/solidjs-reactivity-to-rendering)
 - [A Hands-on Introduction to Fine-Grained Reactivity](https://dev.to/ryansolid/a-hands-on-introduction-to-fine-grained-reactivity-3ndf)
-- [https://www.zhihu.com/question/460278146](https://www.zhihu.com/question/460278146)
+- [如何评价前端框架 Solid?](https://www.zhihu.com/question/460278146)
+- [前端框架的未来：useSignal()](https://juejin.cn/post/7202058334362370103)

@@ -13,6 +13,15 @@ export default function Layout() {
       title: 'About',
       href: '/about',
     },
+    {
+      title: 'Counter',
+      href: '/counter',
+    },
+
+    {
+      title: 'Mall Signal render',
+      href: '/mall',
+    },
 
   ];
 

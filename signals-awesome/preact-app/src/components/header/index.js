@@ -26,6 +26,9 @@ const Header = () => (
       <Link activeClassName={style.active} href="/todo/status">
         Todo Status
       </Link>
+      <Link activeClassName={style.active} href="/mall">
+        Mall
+      </Link>
     </nav>
   </header>
 );
