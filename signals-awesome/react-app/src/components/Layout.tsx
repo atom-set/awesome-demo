@@ -19,10 +19,12 @@ export default function Layout() {
     },
 
     {
+      title: 'Mall@Mobx'
+    },
+    {
       title: 'Mall Signal render',
       href: '/mall',
     },
-
   ];
 
   const handleClick = () => {
@@ -36,7 +38,7 @@ export default function Layout() {
           <ul className="menu-list">
             {testMenuItems.map(({ href, title }) => (
               <li className='menu-item' key={title} onClick={handleClick}>
-                <NavLink to={href}>
+                <NavLink to={href!}>
                   <p className={'text-black'}>{title}</p>
                 </NavLink>
               </li>
