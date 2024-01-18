@@ -8,6 +8,7 @@ const Home = lazy(() => import('./pages/Home'));
 const About = lazy(() => import('./pages/About'));
 const Counter = lazy(() => import('./pages/Counter'));
 const Mall = lazy(() => import('./pages/Mall'));;
+const MallObserver = lazy(() => import('./pages/MallObserver'));;
 
 function App() {
   return (
@@ -31,6 +32,8 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path="/counter" element={<Counter />} />
               <Route path="/mall" element={<Mall />} />
+              <Route path="/mall/observer" element={<MallObserver />} />
+
             </Route>
 
           </Routes>

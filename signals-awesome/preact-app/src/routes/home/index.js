@@ -1,46 +1,32 @@
-import { h } from "preact";
-import style from "./style.css";
+import { signal, computed } from "@preact/signals";
 
-const Home = () => {
+// 定义 signal
+const count = signal(0);
+// 派生 signal
+const comput = computed(() => count.value * 5);
+// 修改 signal
+const increment = () => {
+  count.value++;
+};
+
+const user = signal({ a: { b: 1 }, name: "test" });
+const comput2 = computed(() => user.value.a.b + 1);
+
+const increment2 = () => {
+  user.value.a.b++;
+  user.value = { ...user.value };
+};
+
+export default function Home() {
   return (
-    <div class={style.home}>
-      <a href="https://preactjs.com">
-        <img
-          src="../../assets/preact-logo.svg"
-          alt="Preact Logo"
-          height="160"
-          width="160"
-        />
-      </a>
-      <h1>Get Started Building PWAs with Preact-CLI</h1>
-      <section>
-        <Resource
-          title="Learn Preact"
-          description="If you're new to Preact, try the interactive tutorial to learn important concepts"
-          link="https://preactjs.com/tutorial/"
-        />
-        <Resource
-          title="Differences to React"
-          description="If you're coming from React, check out our docs for where Preact differs"
-          link="https://preactjs.com/guide/v10/differences-to-react"
-        />
-        <Resource
-          title="Learn Preact-CLI"
-          description="To learn more about Preact-CLI, read through the ReadMe & Wiki"
-          link="https://github.com/preactjs/preact-cli#preact-cli--"
-        />
-      </section>
+    <div className="App">
+      <h1>Count -> {count}</h1>
+      <h1>Commp -> {comput}</h1>
+      <button onClick={increment}>Increment</button>
+      <br />
+      <h3>复杂结构响应式失效</h3>
+      <h1> user.value.a.b -> {user.value.a.b}</h1>
+      <button onClick={increment2}>Increment2</button>
     </div>
   );
-};
-
-const Resource = (props) => {
-  return (
-    <a href={props.link} class={style.resource}>
-      <h2>{props.title}</h2>
-      <p>{props.description}</p>
-    </a>
-  );
-};
-
-export default Home;
+}

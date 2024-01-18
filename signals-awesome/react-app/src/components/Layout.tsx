@@ -4,7 +4,6 @@ import { NavLink, Outlet } from "react-router-dom";
 export default function Layout() {
   const [pagePath, setPagePath] = useState(window.location.pathname);
   const testMenuItems = [
-    // 联动
     {
       title: 'Home',
       href: '/home',
@@ -17,13 +16,13 @@ export default function Layout() {
       title: 'Counter',
       href: '/counter',
     },
-
     {
-      title: 'Mall@Mobx'
+      title: 'Mall status render',
+      href: '/mall',
     },
     {
-      title: 'Mall Signal render',
-      href: '/mall',
+      title: 'Mall mobx',
+      href: '/mall/observer',
     },
   ];
 
