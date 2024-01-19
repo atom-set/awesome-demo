@@ -8,3 +8,4 @@
 - [Signals 在JavaScript中的应用](https://juejin.cn/post/7220769138101076026)
 - [@preact/signals-react](https://github.com/preactjs/signals)
 - [Helux](https://heluxjs.github.io/helux/guide)
+- [js-framework-benchmark](https://github.com/krausest/js-framework-benchmark?tab=readme-ov-file)
