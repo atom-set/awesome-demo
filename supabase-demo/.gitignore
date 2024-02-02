@@ -79,7 +79,7 @@ typings/
 .yarn-integrity
 
 # dotenv environment variables file
-.env
+# .env
 # excempt the apps/www .env
 !apps/www/.env
 .env.tmp
@@ -139,7 +139,8 @@ gcloud.json
 
 .history
 
-supabase/
+**/supabase/
 #atom
 #5vNJADG29Pzeam6j
 
+node_modules
