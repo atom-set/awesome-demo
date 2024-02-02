@@ -6,3 +6,4 @@
 - [father](/father)
 - [bun](/bun)
 - [rsbuild](/rsbuild)
+- [supabase](/supabase-demo)
