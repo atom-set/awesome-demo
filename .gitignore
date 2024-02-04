@@ -23,5 +23,8 @@ yarn-debug.log*
 yarn-error.log*
 
 .history/
+
+# npm
+ant-design/
 abit
 docker
